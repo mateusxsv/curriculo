@@ -1,0 +1,112 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Container principal */
+.container {
+    max-width: 900px;
+    background-color: #ffffff;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Cabeçalho */
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 20px;
+}
+
+/* Foto */
+.foto img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Dados principais */
+.dados-principais h1 {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.dados-principais p {
+    margin-bottom: 5px;
+}
+
+/* Seções */
+.section {
+    margin-top: 30px;
+}
+
+.section h2 {
+    font-size: 22px;
+    color: #1e40af;
+    margin-bottom: 15px;
+}
+
+/* Itens */
+.item {
+    margin-bottom: 15px;
+}
+
+.item h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+/* Listas */
+.lista {
+    list-style: square;
+    padding-left: 20px;
+}
+
+.lista li {
+    margin-bottom: 5px;
+}
+
+/* Links */
+.links {
+    list-style: none;
+}
+
+.links li {
+    margin-bottom: 5px;
+}
+
+.links a {
+    text-decoration: none;
+    color: #1e40af;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .foto img {
+        width: 120px;
+        height: 120px;
+    }
+}
